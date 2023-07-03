@@ -19,7 +19,7 @@ function Main() {
         </div>
         <div className="interests-section">
           <h3 className="section-title">Interests</h3>
-          <p className="section-description">Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
+          <p className="section-description">Food expert. Reader. Internet fanatic. </p>
         </div>
       </div>
     </main>

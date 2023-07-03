@@ -1,18 +1,20 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 317px;
+  margin: 3.19em auto; /* 51px auto */
+  border-radius: 10px;
   background: #1a1b21;
   color: #fff;
-  width: 317px;
-  margin: 51px auto;
-  border-radius: 10px;
 }
 
-.header--photo {
+/* HEADER */
+
+.header-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 
 /* MAIN SECTION */
@@ -20,7 +22,7 @@
 main {
   display: flex;
   flex-direction: column;
-  padding: 0 35px;
+  padding: 0 2.19em; /* 0 35px */
 }
 
 .personal-info {
@@ -28,89 +30,92 @@ main {
 }
 
 .name {
-  font-size: 25px;
   margin-bottom: 0;
+  font-size: 1.56rem; /* 25px */
 }
 
 .job-title {
+  margin: 0.47em auto; /* 6px auto */
+  font-size: 0.8rem; /* 12.8px */
   color: #f3bf99;
-  font-size: 12.8px;
-  margin: 6px auto;
 }
 
 .portfolio-link {
+  margin-top: 1.66em; /* 17px */
+  font-size: 0.64rem; /* 10.24px */
   color: #f5f5f5;
-  font-size: 10.24px;
   line-height: 150%;
-  margin-top: 17px;
 }
 
-/* BUTTONS LINKS */
+/* CONTACT LINKS */
+
 .contact-links {
-  margin: 15px auto 0;
   display: flex;
+  margin: 0.95em auto 0; /* 15px auto 0 */
   gap: 17px;
 }
 
 .social-link {
   width: 115px;
-  padding: 9px 13px 9px 11px;
-  text-decoration: none;
+  padding: 0.56em 0.81em 0.56em 0.69em; /* 9px 13px 9px 11px */
   border-radius: 6px;
-  text-align: center;
-  font-size: 14px;
+  font-size: 0.88rem; /* 14px */
   font-weight: 500;
-  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 114.29%; /* 16px */
 }
 
 .email-link {
-  color: #374151;
-  background: url("src/images/mail.png") no-repeat;
+  padding-right: 1.94em; /* 31px */
+  background: url("/src/images/mail.png") no-repeat;
   background-position: 27px 53%;
   background-color: white;
   text-align: right;
-  padding-right: 31px;
+  color: #374151;
 }
 
 .linkedin-link {
-  background: #5093e2;
   color: #fff;
-  text-align: right;
-  padding-right: 21px;
-  background-image: url("src/images/icon-font-awesome-free-brands-l-linkedin.png");
-  background-repeat: no-repeat;
+  padding-right: 1.31em; /* 21px */
+  background: url("/src/images/icon-font-awesome-free-brands-l-linkedin.png")
+    no-repeat;
   background-position: 17px 53%;
+  background-color: #5093e2;
+  text-align: right;
 }
 
 .sections {
-  margin-top: 33px;
   margin-bottom: 0;
+  margin-top: 2.06em; /* 33px */
   padding: 0;
 }
 
 .section-title {
   margin: 0;
-  color: #f5f5f5;
-  font-size: 21px;
+  font-size: 1.31rem; /* 21px */
   font-weight: 700;
+  color: #f5f5f5;
   line-height: 150%;
 }
 
 .section-description {
-  color: #dcdcdc;
-  font-size: 12.24px;
+  margin-top: 0.41em; /* 5px */
+  font-size: 0.76rem; /* 12.24px */
   font-weight: 400;
+  color: #dcdcdc;
   line-height: 150%;
-  margin-top: 5px;
 }
 
+/* FOOTER */
+
 footer {
-  height: 64px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 73px;
+  width: 100%;
+  height: 64px;
+  padding: 0 4.56em; /* 0 73px */
 }
 
 footer a {
@@ -125,7 +130,7 @@ footer a {
   }
 
   .name {
-    font-size: 18px;
+    font-size: 1.12rem; /* 18px */
   }
 
   .contact-links {
@@ -133,7 +138,7 @@ footer a {
   }
 
   footer {
-    padding: 0 47px;
+    padding: 0 2.94em; /* 0 47px */
   }
 }
 
@@ -141,6 +146,7 @@ footer a {
   body {
     height: 100vh;
   }
+
   .container {
     display: grid;
     grid-template: repeat(2, auto) / repeat(2, minmax(100px, 0.5fr));
@@ -153,7 +159,7 @@ footer a {
     grid-area: 1 / 1 / -1/ -1;
   }
 
-  .header--photo {
+  .header-photo {
     width: 50%;
     height: 100%;
     object-fit: cover;
@@ -166,5 +172,6 @@ footer a {
 
   footer {
     grid-area: 2 / 2 / 3 / 3;
+    padding: 0 24.5em; /* 0 147px */
   }
 }
