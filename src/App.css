@@ -113,11 +113,19 @@ footer {
   padding: 0 73px;
 }
 
+footer a {
+  text-decoration: none;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 300px) {
   .container {
     width: 225px;
+  }
+
+  .name {
+    font-size: 18px;
   }
 
   .contact-links {
@@ -126,5 +134,37 @@ footer {
 
   footer {
     padding: 0 47px;
+  }
+}
+
+@media (min-width: 700px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, minmax(100px, 0.5fr));
+    margin: auto;
+    width: calc(100% - 150px);
+    border-radius: 21px;
+  }
+
+  header {
+    grid-area: 1 / 1 / -1/ -1;
+  }
+
+  .header--photo {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+
+  main {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  footer {
+    grid-area: 2 / 2 / 3 / 3;
   }
 }
