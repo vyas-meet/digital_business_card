@@ -172,6 +172,6 @@ footer a {
 
   footer {
     grid-area: 2 / 2 / 3 / 3;
-    padding: 0 24.5em; /* 0 147px */
+    text-align: center;
   }
 }
