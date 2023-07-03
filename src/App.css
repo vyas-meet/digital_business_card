@@ -112,3 +112,19 @@ footer {
   justify-content: space-between;
   padding: 0 73px;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 300px) {
+  .container {
+    width: 225px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 0 57px;
+  }
+}
